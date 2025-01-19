@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.product-list {
+  display: flex;
+  justify-content: flex-start;  /* Aligns products to the left */
+  overflow-x: auto;  /* Enables horizontal scrolling if items overflow */
+  gap: 20px;  /* Adds space between the product items */
+  padding: 20px 0;  /* Adds some padding to the container */
+}
+
+.product-item {
+  width: 220px;  /* You can adjust the width */
+  text-align: center;
+  flex-shrink: 0;  /* Prevents shrinking of items */
+}
+
+.product-item img {
+  max-width: 100%;  /* Ensures the image takes up full width */
+  height: auto;
+  margin-bottom: 10px;
+}
+.product-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;  /* Wraps products to the next line if they overflow */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.product-item {
+  width: 220px;  /* Fixed width for the product card */
+  height: 300px;  /* Fixed height for the product card */
+  text-align: center;
+  flex-shrink: 0;
+  padding: 10px;
+  border-radius: 10px;  /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow */
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-item button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-item button:hover {
+  background-color: #0056b3;
+}
+.product-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Wrap products to the next line if needed */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.product-item {
+  width: 220px; /* Fixed width */
+  height: 340px; /* Fixed height to ensure consistent size */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center; /* Center items horizontally */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text */
+}
+
+.product-item img {
+  width: 100%; /* Full width of the card */
+  height: 150px; /* Set height to fit the card */
+  object-fit: cover; /* Scale image without distortion */
+  border-radius: 5px; /* Optional: Slightly rounded edges */
+}
+
+.product-details {
+  flex: 1; /* Allow details to grow and take up space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-details h3 {
+  font-size: 1rem; /* Adjust font size */
+  margin: 5px 0;
+}
+
+.product-details p {
+  font-size: 1.2rem; /* Adjust price size */
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width of the card */
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
